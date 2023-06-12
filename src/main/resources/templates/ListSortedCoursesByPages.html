@@ -19,17 +19,21 @@
         <label>Sort: </label>
         <span th:if="${direction == 'ASC'}">
             <span class="selected">ASC</span>&nbsp;|&nbsp;
-            <a href="ListSortedCoursesByPages.html" th:href="@{/list-sorted-by-pages(p=${page.number},d='DESC')}">DESC</a>
+            <a href="ListSortedCoursesByPages.html"
+               th:href="@{/list-sorted-by-pages(p=${page.number},d='DESC')}">DESC</a>
         </span>
         <span th:unless="${direction == 'ASC'}">
-            <a href="ListSortedCoursesByPages.html" th:href="@{/list-sorted-by-pages(p=${page.number},d='ASC')}">ASC</a>&nbsp;|&nbsp;
+            <a href="ListSortedCoursesByPages.html"
+               th:href="@{/list-sorted-by-pages(p=${page.number},d='ASC')}">ASC</a>&nbsp;|&nbsp;
             <span class="selected">DESC</span>
         </span>
     </p>
     <p class="page_bar">
         <span th:if="${page.number > 0}">
-            <a href="ListSortedCoursesByPages.html" th:href="@{/list-sorted-by-pages(p=0,d=${direction})}">First</a>&nbsp;|&nbsp;
-            <a href="ListSortedCoursesByPages.html" th:href="@{/list-sorted-by-pages(p=${page.number - 1},d=${direction})}">Previous</a>&nbsp;|&nbsp;
+            <a href="ListSortedCoursesByPages.html"
+               th:href="@{/list-sorted-by-pages(p=0,d=${direction})}">First</a>&nbsp;|&nbsp;
+            <a href="ListSortedCoursesByPages.html"
+               th:href="@{/list-sorted-by-pages(p=${page.number - 1},d=${direction})}">Previous</a>&nbsp;|&nbsp;
         </span>
         <span th:unless="${page.number > 0}">
             <span class="disabled">First</span>&nbsp;|&nbsp;
@@ -38,8 +42,10 @@
         Page <span class="page" th:text="${page.number + 1}">1</span>&nbsp;of&nbsp;<span
             th:text="${page.totalPages}">10</span>
         <span th:if="${page.number < page.totalPages - 1}">
-            &nbsp;|&nbsp;<a href="ListSortedCoursesByPages.html" th:href="@{/list-sorted-by-pages(p=${page.number + 1},d=${direction})}">Next</a>
-            &nbsp;|&nbsp;<a href="ListSortedCoursesByPages.html" th:href="@{/list-sorted-by-pages(p=${page.totalPages - 1},d=${direction})}">Last</a>
+            &nbsp;|&nbsp;<a href="ListSortedCoursesByPages.html"
+                  th:href="@{/list-sorted-by-pages(p=${page.number + 1},d=${direction})}">Next</a>
+            &nbsp;|&nbsp;<a href="ListSortedCoursesByPages.html"
+                  th:href="@{/list-sorted-by-pages(p=${page.totalPages - 1},d=${direction})}">Last</a>
         </span>
         <span th:unless="${page.number < page.totalPages - 1}">
             &nbsp;|&nbsp;<span class="disabled">Next</span>
