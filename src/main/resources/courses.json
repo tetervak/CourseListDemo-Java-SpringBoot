@@ -1,0 +1,418 @@
+[
+	{
+		"code" : "APPL10016",
+		"name" : "Productivity Software MS Word"
+	},
+	{
+		"code" : "APPL10302",
+		"name" : "Web Design"
+	},
+	{
+		"code" : "APPL10604",
+		"name" : "Call Tracking and Management"
+	},
+	{
+		"code" : "APPL19014",
+		"name" : "Spreadsheet Power User MSExcel"
+	},
+	{
+		"code" : "APPL20984",
+		"name" : "Help Desk Management"
+	},
+	{
+		"code" : "APPL57545",
+		"name" : "Mobile Web App Development"
+	},
+	{
+		"code" : "APPL58263",
+		"name" : "Interactive Coding 2"
+	},
+	{
+		"code" : "COMM10074",
+		"name" : "Customer Service Skills"
+	},
+	{
+		"code" : "COMM13729",
+		"name" : "Art of Technical Communication"
+	},
+	{
+		"code" : "DBAS11890",
+		"name" : "Dbase Mgmt using MS Access"
+	},
+	{
+		"code" : "DBAS14444",
+		"name" : "Structured Data Modelling"
+	},
+	{
+		"code" : "DBAS20146",
+		"name" : "Database Modelling"
+	},
+	{
+		"code" : "DBAS20199",
+		"name" : "SQL and Database Management"
+	},
+	{
+		"code" : "DBAS26745",
+		"name" : "Storage Systems"
+	},
+	{
+		"code" : "DBAS32100",
+		"name" : "Database Management"
+	},
+	{
+		"code" : "DSGN52652",
+		"name" : "IMM - Web Design 2"
+	},
+	{
+		"code" : "DSGN55288",
+		"name" : "Technology Design Studio 2"
+	},
+	{
+		"code" : "DSGN58634",
+		"name" : "Mobile Design"
+	},
+	{
+		"code" : "INFO10111",
+		"name" : "Introduction to Cyber Security"
+	},
+	{
+		"code" : "INFO10229",
+		"name" : "Mobile Computing"
+	},
+	{
+		"code" : "INFO15514",
+		"name" : "Comp. Sci. as a Field"
+	},
+	{
+		"code" : "INFO16206",
+		"name" : "Scripting & Web Languages"
+	},
+	{
+		"code" : "INFO20172",
+		"name" : "IT Project Manage Using PMP"
+	},
+	{
+		"code" : "INFO23431",
+		"name" : "Intro to Info Sys Security"
+	},
+	{
+		"code" : "INFO29760",
+		"name" : "Hardware Troubleshooting Maint"
+	},
+	{
+		"code" : "INFO30004",
+		"name" : "Information Syst. Sec. Audit"
+	},
+	{
+		"code" : "INFO31179",
+		"name" : "Human Computer Interaction"
+	},
+	{
+		"code" : "INFO33551G",
+		"name" : "Innovation:From Idea to Execut"
+	},
+	{
+		"code" : "INFO33921",
+		"name" : "Introduction to Cryptology"
+	},
+	{
+		"code" : "INFO34049",
+		"name" : "Capstone Prototype"
+	},
+	{
+		"code" : "INFO36206",
+		"name" : "ISS Grad Project (Phase 1)"
+	},
+	{
+		"code" : "INFO37721",
+		"name" : "Info Systems Forensics/Invest"
+	},
+	{
+		"code" : "INFO40025",
+		"name" : "Information Age Ethics"
+	},
+	{
+		"code" : "INFO43921",
+		"name" : "Malicious Code: Design & Def."
+	},
+	{
+		"code" : "INFO46206",
+		"name" : "Infomation Syst. Int. Dect&Pre"
+	},
+	{
+		"code" : "INFO47035",
+		"name" : "Entrepreneurship"
+	},
+	{
+		"code" : "INFO47546",
+		"name" : "Theory of Computation"
+	},
+	{
+		"code" : "MATH10025",
+		"name" : "Mathematics for Computing"
+	},
+	{
+		"code" : "MATH11044",
+		"name" : "Linear Algebra"
+	},
+	{
+		"code" : "MATH14998",
+		"name" : "Computer Mathematics 1"
+	},
+	{
+		"code" : "MATH18584",
+		"name" : "Computer Math Fundamentals"
+	},
+	{
+		"code" : "MATH22500",
+		"name" : "Data Analysis and Vis. 1"
+	},
+	{
+		"code" : "MATH24178",
+		"name" : "Computer Mathematics 2"
+	},
+	{
+		"code" : "MATH29599",
+		"name" : "Calculus"
+	},
+	{
+		"code" : "MATH36206",
+		"name" : "Advanced Cryptology"
+	},
+	{
+		"code" : "MATH37198",
+		"name" : "Statistics for Data Science"
+	},
+	{
+		"code" : "MEDA54100",
+		"name" : "Audio/Video 2"
+	},
+	{
+		"code" : "MGMT50036",
+		"name" : "Game Production"
+	},
+	{
+		"code" : "MGMT55035",
+		"name" : "Project Management 2"
+	},
+	{
+		"code" : "PROG10004",
+		"name" : "Programming Principles"
+	},
+	{
+		"code" : "PROG10065",
+		"name" : "Interactive Application Dev."
+	},
+	{
+		"code" : "PROG10082",
+		"name" : "Object Oriented Prog 1 - JAVA"
+	},
+	{
+		"code" : "PROG12974",
+		"name" : "Introduction to Programming"
+	},
+	{
+		"code" : "PROG20261",
+		"name" : "Mobile Web App Development"
+	},
+	{
+		"code" : "PROG20799",
+		"name" : "Data Structures in C"
+	},
+	{
+		"code" : "PROG23199",
+		"name" : "Intermediate Programming"
+	},
+	{
+		"code" : "PROG23672",
+		"name" : "Data Structures and Algorithms"
+	},
+	{
+		"code" : "PROG24178",
+		"name" : "Object Oriented Program 2 Java"
+	},
+	{
+		"code" : "PROG26357",
+		"name" : "Game Engine Architecture"
+	},
+	{
+		"code" : "PROG27545",
+		"name" : "Web Application Design & Impl."
+	},
+	{
+		"code" : "PROG30493",
+		"name" : "3D Game Programming 1"
+	},
+	{
+		"code" : "PROG31632",
+		"name" : "Mobile iOS Application Develop"
+	},
+	{
+		"code" : "PROG32356",
+		"name" : "NET Technologies"
+	},
+	{
+		"code" : "PROG33921",
+		"name" : "Game Engineering Principles"
+	},
+	{
+		"code" : "PROG34104",
+		"name" : "Distributed Mobility"
+	},
+	{
+		"code" : "PROG36944",
+		"name" : "NET Server-side Technologies"
+	},
+	{
+		"code" : "PROG38263",
+		"name" : "Secure Software Development"
+	},
+	{
+		"code" : "PROG38448",
+		"name" : "Android Application Dev."
+	},
+	{
+		"code" : "PROG39599",
+		"name" : "Advanced Java Frameworks"
+	},
+	{
+		"code" : "PROG43431",
+		"name" : "Multi-Tier Programming 1"
+	},
+	{
+		"code" : "PROG56048",
+		"name" : "Gameplay Programming"
+	},
+	{
+		"code" : "PROG57370",
+		"name" : "Multiplayer Games"
+	},
+	{
+		"code" : "PROG58634",
+		"name" : "Mobile and Console Games"
+	},
+	{
+		"code" : "PROG59207",
+		"name" : "AI For Games"
+	},
+	{
+		"code" : "SYST10049",
+		"name" : "Web Development"
+	},
+	{
+		"code" : "SYST10082",
+		"name" : "Operating Systems Fundamentals"
+	},
+	{
+		"code" : "SYST10199",
+		"name" : "Web Programming"
+	},
+	{
+		"code" : "SYST13416",
+		"name" : "Linux/UNIX-Operating Systems"
+	},
+	{
+		"code" : "SYST15892",
+		"name" : "Interactive User Design"
+	},
+	{
+		"code" : "SYST17796",
+		"name" : "Software Design Fundamentals"
+	},
+	{
+		"code" : "SYST18713",
+		"name" : "Intro to LINUX Operating Syst."
+	},
+	{
+		"code" : "SYST19534",
+		"name" : "Linux Systems Administration"
+	},
+	{
+		"code" : "SYST19866",
+		"name" : "Operating Systems Technologies"
+	},
+	{
+		"code" : "SYST23551",
+		"name" : "Windows Administration"
+	},
+	{
+		"code" : "SYST24444",
+		"name" : "Mobile Web-Based Applic Develp"
+	},
+	{
+		"code" : "SYST27198",
+		"name" : "CPU Architecture and Assembly"
+	},
+	{
+		"code" : "SYST28296",
+		"name" : "Systems Admin. Linux/UNIX"
+	},
+	{
+		"code" : "SYST30025",
+		"name" : "Software Engineering"
+	},
+	{
+		"code" : "SYST35144",
+		"name" : "Cloud Systems"
+	},
+	{
+		"code" : "SYST35300",
+		"name" : "Hybrid Mobile Apps"
+	},
+	{
+		"code" : "SYST36367",
+		"name" : "Capstone Requirements & Design"
+	},
+	{
+		"code" : "SYST38634",
+		"name" : "Software Process Mgmt"
+	},
+	{
+		"code" : "SYST44998",
+		"name" : "Wireless Security"
+	},
+	{
+		"code" : "TELE10025",
+		"name" : "Network Foundations"
+	},
+	{
+		"code" : "TELE13167",
+		"name" : "Intro to Data Communications"
+	},
+	{
+		"code" : "TELE16048",
+		"name" : "Intro to Communicat'n Networks"
+	},
+	{
+		"code" : "TELE20483",
+		"name" : "Cloud Enabled Networks"
+	},
+	{
+		"code" : "TELE25436",
+		"name" : "Advanced Wireless Networks"
+	},
+	{
+		"code" : "TELE25892",
+		"name" : "Wireless Network Principles"
+	},
+	{
+		"code" : "TELE29599",
+		"name" : "Internetworking"
+	},
+	{
+		"code" : "TELE31831",
+		"name" : "Network Engineering 2"
+	},
+	{
+		"code" : "TELE33324",
+		"name" : "Data Network Design/Config"
+	},
+	{
+		"code" : "TELE35376",
+		"name" : "Carrier Networks"
+	},
+	{
+		"code" : "TELE36058",
+		"name" : "Software Defined Networks"
+	}
+]
