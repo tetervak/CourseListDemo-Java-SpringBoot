@@ -36,24 +36,26 @@ public class CourseDataController {
         return new ModelAndView("ListAllCourses", "courses", courses);
     }
 
-    @GetMapping("/list-by-pages")
-    public ModelAndView listCoursesByPages(@RequestParam(defaultValue = "0") int p){
-
-        Page<Course> page = repository.findAll(PageRequest.of(p,10));
-        return new ModelAndView("ListCoursesByPages", "page", page);
-    }
-
     @GetMapping("/list-by-codes")
     public String listCoursesByCodes(
             @RequestParam(defaultValue = "PROG") String starts,
             Model model
     ){
-        String[] codeLetters = {"APPL", "COMM", "DBAS", "DSGN", "INFO", "MATH", "MEDA", "PROG", "SYST", "TELE"};
+        String[] codeLetters =
+                {"APPL", "COMM", "DBAS", "DSGN", "INFO", "MATH", "MEDA", "PROG", "SYST", "TELE"};
         List<Course> courses = repository.findByCodeStartsWith(starts);
         model.addAttribute("codeLetters", codeLetters);
         model.addAttribute("selectedLetters", starts);
         model.addAttribute("courses", courses);
         return"ListCoursesByCodes";
     }
+
+    @GetMapping("/list-by-pages")
+    public ModelAndView listCoursesByPages(@RequestParam(defaultValue = "0") int p){
+        Page<Course> page = repository.findAll(PageRequest.of(p,10));
+        return new ModelAndView("ListCoursesByPages", "page", page);
+    }
+
+
 
 }
