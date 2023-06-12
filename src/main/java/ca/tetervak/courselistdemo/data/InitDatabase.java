@@ -15,8 +15,6 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.System.out;
-
 @Component
 public class InitDatabase {
 

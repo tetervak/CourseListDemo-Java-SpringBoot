@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>List All</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/main.css}" href="../static/css/main.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/footer.css}" href="../static/css/footer.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script th:src="@{/js/footer.js}" src="../static/js/footer.js"></script>
+</head>
+<body>
+<main>
+    <h1>Courses</h1>
+    <p class="page_bar">
+        <span th:if="${page.number > 0}">
+            <a th:href="@{/courses(p=0)}">First</a>&nbsp;|&nbsp;
+            <a th:href="@{/courses(p=${page.number - 1})}">Previous</a>&nbsp;|&nbsp;
+        </span>
+        Page <span class="page" th:text="${page.number + 1}">1</span>&nbsp;of&nbsp;<span th:text="${page.totalPages}">10</span>
+        <span th:if="${page.number < page.totalPages - 1}">
+            &nbsp;|&nbsp;<a th:href="@{/courses(p=${page.number + 1})}">Next</a>
+            &nbsp;|&nbsp;<a th:href="@{/courses(p=${page.totalPages - 1})}">Last</a>
+        </span>
+    </p>
+    <table>
+        <tr>
+            <th>Count</th>
+            <th>Code</th>
+            <th>Course Name</th>
+        </tr>
+        <tr th:each="course, c: ${page.content}">
+            <td th:text="${c.count + 10*page.number}">1</td>
+            <td th:text="${course.code}">PROG32758</td>
+            <td th:text="${course.name}">Java Enterprise Development</td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>
