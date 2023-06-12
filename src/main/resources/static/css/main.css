@@ -82,6 +82,14 @@ span.page {
     font-weight: bolder;
 }
 
+span.code {
+    font-weight: bolder;
+}
+
 p.page_bar{
     margin-left: 4em;
+}
+
+span.disabled{
+    color: lightgray;
 }
