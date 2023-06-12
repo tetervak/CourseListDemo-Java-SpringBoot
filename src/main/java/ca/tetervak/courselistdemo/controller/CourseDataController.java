@@ -72,7 +72,7 @@ public class CourseDataController {
     }
 
     @GetMapping("/list-sorted-by-pages")
-    public String listCoursesByPagesSorted(
+    public String listSortedCoursesByPages(
             @RequestParam(defaultValue = "0") int p,
             @RequestParam(defaultValue = "ASC") String d,
             Model model
@@ -83,7 +83,7 @@ public class CourseDataController {
         model.addAttribute("page", page);
         log.debug("direction=" + direction);
         model.addAttribute("direction", direction.toString());
-        return "ListCoursesByPagesSorted";
+        return "ListSortedCoursesByPages";
     }
 
 }
