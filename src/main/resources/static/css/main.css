@@ -10,8 +10,9 @@ main{
     padding-left: 1em;
 }
 
-label.group_label{
+label{
     color: #673ab7;
+    font-weight: bolder;
 }
 
 input, select{
@@ -82,7 +83,7 @@ span.page {
     font-weight: bolder;
 }
 
-span.code {
+span.selected {
     font-weight: bolder;
 }
 

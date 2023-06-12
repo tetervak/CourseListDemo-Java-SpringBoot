@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -56,6 +57,18 @@ public class CourseDataController {
         return new ModelAndView("ListCoursesByPages", "page", page);
     }
 
-
+    @GetMapping("/list-all-sorted")
+    public String listAllCoursesSorted(
+            @RequestParam(defaultValue = "ASC") String d,
+            Model model
+    ){
+        Sort.Direction direction = d.equals("DESC")?Sort.Direction.DESC:Sort.Direction.ASC;
+        Sort sort = Sort.by(direction, "code", "name");
+        List<Course> courses = repository.findAll(sort);
+        model.addAttribute("courses", courses);
+        log.debug("direction=" + direction);
+        model.addAttribute("direction", direction.toString());
+        return "ListAllCoursesSorted";
+    }
 
 }
