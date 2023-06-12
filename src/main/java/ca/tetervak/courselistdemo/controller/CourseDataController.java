@@ -71,4 +71,19 @@ public class CourseDataController {
         return "ListAllCoursesSorted";
     }
 
+    @GetMapping("/list-sorted-by-pages")
+    public String listCoursesByPagesSorted(
+            @RequestParam(defaultValue = "0") int p,
+            @RequestParam(defaultValue = "ASC") String d,
+            Model model
+    ){
+        Sort.Direction direction = d.equals("DESC")?Sort.Direction.DESC:Sort.Direction.ASC;
+        Sort sort = Sort.by(direction, "code", "name");
+        Page<Course> page = repository.findAll(PageRequest.of(p,10, sort));
+        model.addAttribute("page", page);
+        log.debug("direction=" + direction);
+        model.addAttribute("direction", direction.toString());
+        return "ListCoursesByPagesSorted";
+    }
+
 }
