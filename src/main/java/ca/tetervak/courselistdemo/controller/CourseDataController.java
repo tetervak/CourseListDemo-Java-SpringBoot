@@ -10,6 +10,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -37,16 +38,22 @@ public class CourseDataController {
         return new ModelAndView("ListAllCourses", "courses", courses);
     }
 
+
     @GetMapping("/list-by-codes")
+    public String listCoursesByCodesDefault(){
+        return "redirect:/list-by-codes/PROG";
+    }
+
+    @GetMapping("/list-by-codes/{letters}")
     public String listCoursesByCodes(
-            @RequestParam(defaultValue = "PROG") String starts,
+            @PathVariable String letters,
             Model model
     ){
         String[] codeLetters =
                 {"APPL", "COMM", "DBAS", "DSGN", "INFO", "MATH", "MEDA", "PROG", "SYST", "TELE"};
-        List<Course> courses = repository.findByCodeStartsWith(starts);
+        List<Course> courses = repository.findByCodeStartsWith(letters);
         model.addAttribute("codeLetters", codeLetters);
-        model.addAttribute("selectedLetters", starts);
+        model.addAttribute("selectedLetters", letters);
         model.addAttribute("courses", courses);
         return"ListCoursesByCodes";
     }
@@ -55,6 +62,27 @@ public class CourseDataController {
     public ModelAndView listCoursesByPages(@RequestParam(defaultValue = "0") int p){
         Page<Course> page = repository.findAll(PageRequest.of(p,10));
         return new ModelAndView("ListCoursesByPages", "page", page);
+    }
+
+    @GetMapping("/list-by-codes-and-pages")
+    public String listCoursesByCodesAndPagesDefault(){
+        return "redirect:/list-by-codes-and-pages/PROG";
+    }
+
+    @GetMapping("/list-by-codes-and-pages/{letters}")
+    public String listCoursesByCodesAndPages(
+            @PathVariable String letters,
+            @RequestParam(defaultValue = "0") int p,
+            Model model
+    ){
+        String[] codeLetters =
+                {"APPL", "COMM", "DBAS", "DSGN", "INFO", "MATH", "MEDA", "PROG", "SYST", "TELE"};
+        model.addAttribute("codeLetters", codeLetters);
+        model.addAttribute("selectedLetters", letters);
+
+        Page<Course> page = repository.findByCodeStartsWith(letters,PageRequest.of(p,10));
+        model.addAttribute("page", page);
+        return "ListCoursesByCodesAndPages";
     }
 
     @GetMapping("/list-all-sorted")

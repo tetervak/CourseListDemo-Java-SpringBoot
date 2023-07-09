@@ -18,7 +18,7 @@
     <span th:each="letters: ${codeLetters}">
       <a href="ListCoursesByCodes.html"
          th:unless="${letters == selectedLetters}"
-         th:href="@{/list-by-codes(starts=${letters})}" th:text="${letters}">PROG</a>
+         th:href="@{/list-by-codes/{letters}(letters=${letters})}" th:text="${letters}">PROG</a>
       <span class="selected" th:if="${letters == selectedLetters}" th:text="${letters}">SYST</span>&nbsp;
     </span>
   </p>
